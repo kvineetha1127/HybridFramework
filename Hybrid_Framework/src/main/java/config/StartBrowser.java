@@ -22,8 +22,7 @@ public class StartBrowser {
   public static ExtentTest childTest;
   
   //This is New Commit
-  @BeforeTest
-  
+  @BeforeTest  
   public void beforeTest()
   {
 	  htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/MyReport.html");
@@ -58,5 +57,4 @@ public class StartBrowser {
 	 driver.quit();
 	 extent.flush();
   }
-
 }
